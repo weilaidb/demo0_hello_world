@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.RestController
 class HelloWorldController {
     @GetMapping(value = ["", "/", "/hello"])
     fun hello(): Greeting {
-        return Greeting(name = "World", greeting = "Hello")
+//        return Greeting(name = "World£¡", greeting = "Hello£¡")
+        return Greeting(name = "World£¡", greeting = "Hello£¡", para2 ="hahahahah@")
     }
 
-    data class Greeting(var name: String, var greeting: String)
+
+    data class Greeting(var name: String, var greeting: String, var para2:String)
 }
