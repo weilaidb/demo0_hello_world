@@ -13,4 +13,19 @@ class HelloWorldController {
 
 
     data class Greeting(var name: String, var greeting: String, var para2:String)
+
+
+
+    @GetMapping(value = ["/world"])
+    fun SayHello(): Greeting2 {
+        return Greeting2(name = "World£°", greeting = "Hello£°", para2 =" ¿ΩÁ@")
+    }
+
+    data class Greeting2(var name: String, var greeting: String, var para2:String)
+
+
+
+
+
+
 }
